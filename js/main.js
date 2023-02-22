@@ -18,7 +18,6 @@ function() {
         ticketPrice = ticketPrice - (ticketPrice * 0.4);
     }
 
-    document.getElementById('price').append(ticketPrice,'€');
     console.log('Il prezzo del biglietto è',ticketPrice,'€');
 }
 );

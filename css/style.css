@@ -1,0 +1,38 @@
+:root {
+    --ms-primary-color: #b91547;
+}
+
+/*
+--------
+TYPO
+--------
+*/
+
+/*
+--------
+COMMON
+--------
+*/
+
+/*
+--------
+MAIN
+--------
+*/
+
+main {
+    height: 100vh;
+    background-color: var(--ms-primary-color);
+    padding: .9375rem 0;
+}
+
+main .ms-white-box {
+    background-color: #fff;
+    border-radius: 1.25rem;
+}
+
+/* Form */
+
+input {
+    text-align: center;
+}

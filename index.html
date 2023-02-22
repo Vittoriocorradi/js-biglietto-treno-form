@@ -24,21 +24,31 @@
     <!-- Main -->
     <main>
         <!-- Form -->
-        <section id="form">
-            <form action="" method="get">
-                <label for="user-distance">Km da percorrere</label>
-                <input type="number" name="user-distance" id="user-distance">
-                <label for="user-age">Fascia d'età</label>
-                <select name="user-age" id="user-age">
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="over65">Over 65</option>
-                </select>
-                <button type="button" id="confirm-button">Genera</button>
+        <section id="form" class="container">
+            <h1 class="text-uppercase fw-bold text-white text-center mb-5">calcola il prezzo del tuo biglietto</h1>
+            <form action="/" method="get" class="row justify-content-center text-center align-items-center ms-white-box py-4">
+                <div class="col-12 col-lg-3">
+                    <label for="user-name" class="mb-3">Nome Cognome</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="Nome Cognome">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label for="user-distance" class="mb-3">Km da percorrere</label>
+                    <input type="number" name="user-distance" id="user-distance" placeholder="Numero km">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label for="user-age" class="mb-3">Fascia d'età</label>
+                    <br class="d-none d-lg-block">
+                    <select name="user-age" id="user-age">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-8 mt-5">
+                    <button type="button" id="confirm-button" class="me-3">Genera</button>
+                    <button type="reset" id="reset-button">Annulla</button>
+                </div>
             </form>
-            <div id="price">
-                Il prezzo del biglietto è:
-            </div>
         </section>
         <!-- /Form -->
     </main>
@@ -47,3 +57,8 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<form action="/" method="get">
+    
+    
+    
+</form>
