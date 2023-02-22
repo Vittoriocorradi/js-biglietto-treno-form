@@ -8,11 +8,19 @@ TYPO
 --------
 */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /*
 --------
 COMMON
 --------
 */
+
+body {
+    height: 100vh;
+}
 
 /*
 --------
@@ -21,18 +29,40 @@ MAIN
 */
 
 main {
-    height: 100vh;
+    height: 100%;
     background-color: var(--ms-primary-color);
-    padding: .9375rem 0;
+    padding: 1.875rem 0 2.5rem;
+    overflow-y: auto;
 }
 
-main .ms-white-box {
+main #form .ms-white-box {
     background-color: #fff;
     border-radius: 1.25rem;
+}
+
+main #ticket .ms-white-box {
+    background-color: #fff;
 }
 
 /* Form */
 
 input {
     text-align: center;
+}
+
+/* Ticket */
+
+main #ticket .passenger-name {
+    background-color: #757575;
+    padding: 1.5625rem .625rem;
+}
+
+main #ticket .info {
+    border-top: .0625rem solid #757575;
+    border-bottom: .0625rem solid #757575;
+    padding: 1.5625rem 0;
+}
+
+main #ticket h4 {
+    margin-bottom: 2.8125rem;
 }
