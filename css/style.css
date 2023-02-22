@@ -35,25 +35,57 @@ main {
     overflow-y: auto;
 }
 
+/* Form */
+
 main #form .ms-white-box {
     background-color: #fff;
     border-radius: 1.25rem;
 }
 
-main #ticket .ms-white-box {
-    background-color: #fff;
+main #form label {
+    color: var(--ms-primary-color);
 }
 
-/* Form */
-
-input {
+main #form input,
+main #form select {
     text-align: center;
+    border: .0625rem solid var(--ms-primary-color);
+}
+
+main #form select {
+    height: 1.725rem;
+}
+
+main #form .ms-btn {
+    color: var(--ms-primary-color);
+    font-family: inherit;
+    background-color: #c5c5c5;
+    font-weight: 700;
+}
+main #form .ms-btn:first-child {
+    border: .125rem solid #e38446;
+}
+
+main #form input,
+main #form .ms-btn,
+main #form select {
+    border-radius: .3125rem;
+}
+
+main #form .ms-btn:active {
+    background-color: var(--ms-primary-color);
+    color: #fff;
+    border: .125rem solid var(--ms-primary-color);
 }
 
 /* Ticket */
 
 main .hidden {
     display: none;
+}
+
+main #ticket .ms-white-box {
+    background-color: #fff;
 }
 
 main #ticket .passenger-name {
