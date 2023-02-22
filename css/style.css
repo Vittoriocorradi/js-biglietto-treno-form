@@ -52,6 +52,10 @@ input {
 
 /* Ticket */
 
+main .hidden {
+    display: none;
+}
+
 main #ticket .passenger-name {
     background-color: #757575;
     padding: 1.5625rem .625rem;
