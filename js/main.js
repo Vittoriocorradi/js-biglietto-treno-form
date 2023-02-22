@@ -42,12 +42,13 @@ function() {
         userDistance = Number(document.getElementById("user-distance").value);
         userAge = document.getElementById('user-age').value;
         ticketPrice = userDistance * 0.21;
-        trainCarNumber = Math.round(Math.random() * 10) + 1;
-        userCode = Math.round(Math.random() * 89999) + 10001;
+        trainCarNumber = Math.floor(Math.random() * 10 + 1);
+        userCode = Math.floor(Math.random() * 89998) + 10001;
         // Modifica DOM
         document.querySelector('.js-passenger-name').innerHTML = userName;
         document.getElementById('js-train-car').innerHTML = trainCarNumber;
         document.getElementById('js-user-code').innerHTML = userCode;
+        document.getElementById('js-ticket-type').innerHTML = 'Biglietto standard';
         // Condizione
         if (userAge === 'minorenne') {
             ticketPrice = ticketPrice - (ticketPrice * 0.2);

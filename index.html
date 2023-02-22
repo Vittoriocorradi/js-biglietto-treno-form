@@ -27,16 +27,19 @@
         <section id="form" class="container mb-5">
             <h1 class="text-uppercase fw-bold text-white text-center mb-4">calcola il prezzo del tuo biglietto</h1>
             <form action="/" method="get" class="row justify-content-center text-center align-items-center ms-white-box g-0 py-4">
+                <!-- Input nome -->
                 <div class="col-12 col-lg-3">
                     <label for="user-name" class="mb-3">Nome Cognome</label>
                     <br class="d-none d-lg-block">
                     <input type="text" name="user-name" id="user-name" placeholder="Nome Cognome">
                 </div>
+                <!-- Input distanza -->
                 <div class="col-12 col-lg-3">
                     <label for="user-distance" class="mb-3">Km da percorrere</label>
                     <br class="d-none d-lg-block">
                     <input type="number" name="user-distance" id="user-distance" placeholder="Numero km">
                 </div>
+                <!-- Select Età -->
                 <div class="col-12 col-lg-3">
                     <label for="user-age" class="mb-3">Fascia d'età</label>
                     <br class="d-none d-lg-block">
@@ -46,6 +49,7 @@
                         <option value="over65">Over 65</option>
                     </select>
                 </div>
+                <!-- Bottoni -->
                 <div class="col-12 col-lg-8 mt-5">
                     <button type="button" id="confirm-button" class="me-3 ms-btn">Genera</button>
                     <button type="reset" id="reset-button" class="ms-btn">Annulla</button>
@@ -59,10 +63,12 @@
             <div class="ms-white-box py-3 px-4">
                 <h2 class="mb-2">Dettaglio passeggeri</h2>
                 <div class="row">
+                    <!-- Nome passeggero -->
                     <div class="col-12 col-lg-3 passenger-name">
                         <h3 class="fs-5 text-uppercase fw-bolder">Nome passeggero</h3>
                         <div class="fw-bolder js-passenger-name">Jon Snow</div>
                     </div>
+                    <!-- Informazioni biglietto -->
                     <div class="col-12 col-lg-9 d-flex justify-content-around info">
                         <div>
                             <h4 class="fs-6 fw-bolder">Offerta</h4>
