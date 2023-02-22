@@ -20,6 +20,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- Main -->
+    <main>
+        <!-- Form -->
+        <section id="form">
+            <form action="" method="get">
+                <label for="user-distance">Km da percorrere</label>
+                <input type="number" name="user-distance" id="user-distance">
+                <label for="user-age">Fascia d'età</label>
+                <select name="user-age" id="user-age">
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+                <button type="button" id="confirm-button">Genera</button>
+            </form>
+            <div id="price">
+                Il prezzo del biglietto è:
+            </div>
+        </section>
+        <!-- /Form -->
+    </main>
+    <!-- /Main -->
+
     <script src="js/main.js"></script>
 </body>
 </html>
